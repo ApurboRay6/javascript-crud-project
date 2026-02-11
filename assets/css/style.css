@@ -1,0 +1,515 @@
+/*
+ Template Name: Zicomb Demo Preview 
+ Template URI: https://
+ Author: ThemeWar
+ Author URI: https://
+ Description: Demo HTML Teamplate
+ Version: 1.0.0
+ License:
+ License URI: 
+*/
+
+/***** Import Fonts  
+/*****************************************************/
+
+/* ==================================
+    Varible Color
+================================== */
+
+:root {
+    --primary-font: 'Montserrat';
+
+}
+
+.login-page {
+    font-family: var(--primary-font);
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#FEAF00 0%, #F8D442 100%);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    width: 400px;
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form .title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+.login-form .sub-title {
+    text-align: center;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 600;
+    margin-bottom: 9px;
+    color: #000000;
+}
+
+.login-form .description {
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-bottom: 25px;
+    color: #6C6C6C;
+}
+
+.login-form .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.login-form .form-group label {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #6C6C6C;
+}
+
+.login-form .form-group .email-icon,
+.login-form .form-group .eye-icon {
+    position: absolute;
+    left: 15px;
+    top: 70%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #6C6C6C;
+    cursor: pointer;
+}
+
+.login-form .form-group .eye-icon {
+    left: auto;
+    right: 15px;
+}
+
+.login-form .form-group .eye-icon #show {
+    display: none;
+}
+
+.login-form .form-group .email-input {
+    padding: 15px 20px 14px 35px;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    border: 1px solid #CDCDCD;
+    border-radius: 4px;
+    outline: none;
+}
+
+.login-form .form-group input {
+    padding: 15px 50px 14px 20px;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    border: 1px solid #CDCDCD;
+    border-radius: 4px;
+    outline: none;
+}
+
+.login-form .form-group input::placeholder {
+    color: #CDCDCD;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 14px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #FEAF00;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+
+.loginForm p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #6C6C6C;
+    margin-bottom: 0 !important;
+}
+
+.loginForm p a {
+    color: #FEAF00 !important;
+    text-decoration: underline !important;
+}
+
+
+/* index page  */
+
+
+.dashboard-content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.dashboard-content .dashboard-manu-content {
+    width: 270px;
+    height: 100vh;
+    background-color: #F2EAE1;
+    padding: 18px 38px 31px;
+}
+
+.dashboard-manu .dashboard-title {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.dashboard-manu .dashboard-title span {
+    width: 4px;
+    height: 23px;
+    background-color: #FEAF00;
+    display: inline-block;
+}
+
+.user-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.user-profile .profile-thumb {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-profile .name {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 700 !important;
+    color: #000000;
+    margin: 0 !important;
+}
+
+.user-profile .user-roll {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #FEAF00;
+    margin: 0 !important;
+}
+
+.user-profile .profile-thumb img {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-fit: cover;
+}
+
+.dashboard-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 35px 0;
+}
+
+.dashboard-menu li {
+    width: 100%;
+    background-color: transparent;
+}
+
+.dashboard-menu li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #000000;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+.dashboard-menu li:hover a,
+.dashboard-menu li a.active {
+    background-color: #FEAF00;
+}
+
+
+.logout-btn {
+    background: #FEAF00;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 220px auto 0;
+}
+
+.logout-btn:hover {
+    background: #ad7703;
+}
+
+
+.dashboard-body-content {
+    background-color: #f8f8f8;
+    width: 100%;
+}
+
+.dashboard-body-content .dashboard-body-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 11px 30px;
+}
+
+.dashboard-body-header .right-content {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.right-content .scarch-box {
+    border: 1px solid #E5E5E5;
+    border-radius: 8px;
+    position: relative;
+
+}
+
+.scarch-box input {
+    border: none !important;
+    outline: none !important;
+    background: transparent;
+    padding: 7px 25px 6px 9px;
+}
+
+.scarch-box i {
+    font-size: 14px;
+    position: absolute;
+    right: 12px;
+    top: 13px;
+    color: #C4C4C4;
+}
+
+.dashboard-body-main-content {
+    margin: 30px;
+}
+
+.dashboard-body-main-content .dashboar-card {
+    background-color: #F0F9FF;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 0 0 20px;
+}
+
+.dashboard-body-main-content .dashboar-card:hover,
+.dashboard-body-main-content .dashboar-card.active {
+    background: linear-gradient(#FEAF00 0%, #F8D442 100%);
+}
+
+.dashboar-card .card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0 0 10px;
+}
+
+.dashboard-body-main-content .dashboar-card:hover .card-content span svg path {
+    fill: #fff;
+}
+
+.card-content .card-title {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #6C6C6C;
+}
+
+.dashboard-body-main-content .dashboar-card:hover .card-content .card-title,
+.card-title.activ {
+    color: #fff;
+}
+
+.dashboar-card h6 {
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 700 !important;
+    color: #000000;
+    text-align: right;
+    margin: 0;
+
+}
+
+.dashboar-card.card-2 {
+    background-color: #FEF6FB;
+}
+
+.dashboar-card.card-3 {
+    background-color: #FEFBEC;
+}
+
+.dashboar-card.card-4 {
+    background-color: #FEFBEC;
+}
+
+/*================== Student Page ==========================*/
+.students-list-contener {
+    padding: 0 30px;
+}
+
+.students-list-contener .students-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 0;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.students-list-contener .students-list-header h2 {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 600 !important;
+    color: #000000;
+}
+
+.students-list-header .students-list-header-right-content {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.students-list-header-right-content .add-student-btn {
+    border: none;
+    outline: none;
+    background-color: #FEAF00;
+    color: #fff;
+    padding: 13px 26px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.students-list-body .modal-content {
+    background-color: #F2EAE1;
+}
+
+.modal-content .modal-header {
+    border: none;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+.modal-content .modal-header .modal-title {
+    font-size: 22px !important;
+    font-weight: 600 !important;
+}
+
+
+
+.modal-content .modal-footer {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.modal-footer .add-student-btn,
+.modal-footer .close-btn {
+    border: none;
+    outline: none;
+    background-color: #FEAF00;
+    color: #fff;
+    padding: 10px 26px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.modal-footer .close-btn {
+    background-color: transparent;
+    color: #6C6C6C;
+}
+
+.table-striped {
+    margin: 0 0 10px;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+.table-striped thead tr th {
+    border: none;
+    color: #ACACAC;
+    font-size: 12px;
+    font-weight: 500;
+    background: transparent;
+}
+
+#studentsTableBody tr {
+    background: #fff;
+    border-radius: 15px;
+}
+
+#studentsTableBody td {
+    border: none;
+    padding: 10px;
+    vertical-align: middle;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #000000;
+}
+
+#studentsTableBody tr td:first-child {
+    border-radius: 8px 0 0 8px;
+}
+
+#studentsTableBody tr td:last-child {
+    border-radius: 0 8px 8px 0;
+}
+
+.student-img {
+    width: 65px;
+    height: 55px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+#studentsTableBody tr td button {
+    border: none;
+    outline: none;
+    background: transparent;
+    margin: 0 20px 0 0;
+}
+
+#studentsTableBody tr td button:last-child {
+    margin: 0;
+}
