@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     showConfirmButton: false,
                     timer: 1000
                 }).then(() => {
-                    window.location.href = "index.html";
+                    window.location.href = "dashboard.html";
                 });
             }
         });
@@ -57,7 +57,7 @@ let logoutBtn = document.getElementById("logoutBtn");
 if (logoutBtn) {
     logoutBtn.addEventListener("click", function () {
         alert("Logout successful");
-        window.location.href = "login.html";
+        window.location.href = "index.html";
     });
 }
 
